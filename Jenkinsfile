@@ -1,13 +1,13 @@
 pipeline{
     agent any
     stages{
-        stage('checkout the code from github'){
+        stage('checkouut the code from github'){
             steps{
                  git url: 'https://github.com/akshu20791/Banking-java-project/'
                  echo 'github url checkout'
             }
         }
-        stage('codecompile with akshat'){
+        stage('codecompile with akshat'){ 
             steps{
                 echo 'starting compiling'
                 sh 'mvn compile'
